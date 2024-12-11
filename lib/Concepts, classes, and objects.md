@@ -20,19 +20,8 @@ Extend/shorten: Adjusting the length of the handle could also be an Integer valu
 Reel cord: This could be a Boolean value, as the power cord is either being reeled in or not.
 
 Class diagram of the vacuum:
-___________________
-|      Vacuum     |
-|_________________|
-|brand            |
-|model            |
-|power            |
-|colour           |
-|_________________|
-|turnOn()         |
-|adjustPower      |
-|extendShorten    |
-|reelCord         |
-|_________________|
+
+![Class diagram](<Images/Class diagram of the vacuum.png>)
 
 So, a class itself is not something tangible; it is merely a blueprint defining the attributes and functions a future object can have, such as model, brand, color, or actions like turning the device on, adjusting the power, and turning it off.
 An object, then, is a tangible instance created from that class, such as the Dyson vacuum cleaner, which has 650W of power and 5 different suction levels.
