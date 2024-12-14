@@ -115,3 +115,30 @@ Access Modifiers
 
 private and public are basic modifiers in Object Oriented Programming. There is also 2 more modifiers, protected and default, but those are not in the scope of the course.
 
+
+
+********************
+*   Inheritance  
+********************
+
+Basically there is 2 classes, which are Parent class/superclass (kantaluokka) and child class/subclass (aliluokka).
+
+Parent class usually have basic attributes and methods, which the subclasses inherit. When adding attributes or methods to the parent class the subclasses inherit those.
+
+In class diagrams the inheritance arrows are drawn from child to parent. Only public attributes and methods can be inherited. One possible way to allow inheritance is to use protected, instead of public.
+
+A class can be created so that it inherits attributes and methods from another calss.
+
+Subclasses can have new attributes and methods.
+
+Subclass is usually more specific or detailed version of usually more generic superclass.
+
+Subclass can inherit a method. In subclass we can change the actions/logic of the method by overrideing it.
+
+Private attributes and methods can't be inherited.
+Public (and protected) attributes and methods can be inherited.
+Constructors aren't inherited.
+
+Advantages of inheritance is that code can be reused (less code).
+
+Inheritance can also be overused which makes the program more complex, and can be also a disadvantage.
