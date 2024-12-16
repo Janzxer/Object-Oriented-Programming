@@ -141,4 +141,38 @@ Constructors aren't inherited.
 
 Advantages of inheritance is that code can be reused (less code).
 
-Inheritance can also be overused which makes the program more complex, and can be also a disadvantage.
+Inheritance can also be overused which makes the program more complex, and that can be also a disadvantage.
+
+********************
+*   Static members
+********************
+
+Static attribute values are the same for all the objects made from the class. Static attributes can only be accessed through the class and not through the object.
+
+Methods can also be static, and when calling static methods you need to use the class and not the object.
+
+In non-static methods, static and non-static attributes can be used. In static methods, only static attributes can be used. The same goes for methods.
+
+Static attributes and methods can be used when the values need to be same for all the objects.
+
+Static attributes and methods can be called without object, via the class.
+
+
+**************************************
+*   Calling methods from another class
+**************************************
+
+To call methods in other classes, we need to send the object as an argument to the method. Then we need to change the method parameter to reflect the sent argument.
+
+For example:
+
+pacman.eat(fruit1); Within the brackets is the object that we are sending to the eat method. fruit1 is an object created from the "Fruit" class.
+
+In the eat method we do the following:
+
+public void eat(Fruit eatenFruit) First we declare the Fruit as a parameter for the eat method, then we give it a "value" this will be "eatenFruit"
+
+With the eatenFruit we can call the method "dissapear"
+
+eatenFruit.disappear();
+
