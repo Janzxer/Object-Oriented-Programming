@@ -194,15 +194,15 @@ For example, with method calculateArea, it is very different for "Circle" and "R
 
 Abstract method just declares that the method should be in the subclass but does not give any content for it. Subclass needs to daclare methods functionality.
 
-    If even one method in the class is abstract, the class must be abstract.
+If even one method in the class is abstract, the class must be abstract.
 
-    Abstract method does not have a body (There isn't an actual funtionality/code) it is just a declaration of to be method
+Abstract method does not have a body (There isn't an actual funtionality/code) it is just a declaration of to be method
 
-    A constructor cannot be abstract
+A constructor cannot be abstract
 
-    All the abstract methods must be coded and overridden in the subclass
+All the abstract methods must be coded and overridden in the subclass
 
-    There can be also normal methods in abstract class and constructors
+There can be also normal methods in abstract class and constructors
 
 
 
