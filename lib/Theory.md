@@ -10,6 +10,7 @@ Attributes are quite like the variables.
 Object can have attributes like:
 
 Fiat object attributes:
+
 speed = 80
 numberOfDoors = 4
 
