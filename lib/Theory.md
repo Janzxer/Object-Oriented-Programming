@@ -12,6 +12,7 @@ Object can have attributes like:
 Fiat object attributes:
 
 speed = 80
+
 numberOfDoors = 4
 
 Objects can do something, for example change the values of its attributes. These procedures/actions/behaviors are called methods.
