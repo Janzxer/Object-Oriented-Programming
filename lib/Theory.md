@@ -35,11 +35,11 @@ Object is like a part og a machine for example a dishwasher
 Every object has a role:
 
 
-Object 1 knows everything
+* Object 1 knows everything
 
-Object 2 validates the data
+* Object 2 validates the data
 
-Object 3 prints
+* Object 3 prints
 
 ![Roles](<Images/Flow of roles.png>)
 
@@ -86,22 +86,22 @@ If you don't create constructor for your class, compiler will create one for you
 
 To define how object is initialized, you can define the constructor by yourself
 
-*The name of the constructor and the class must be same
+* The name of the constructor and the class must be same
 
-*You cannot add void to it
+* You cannot add void to it
 
-*Constructor can't return anything
+* Constructor can't return anything
 
-*Constructor can take arguments and this is called a "Parameterized Constructor" (parametrinen rakentaja)
+* Constructor can take arguments and this is called a "Parameterized Constructor" (parametrinen rakentaja)
 
-*You can also define the funtionality of parameterless constructor
+* You can also define the funtionality of parameterless constructor
 
 
 There can be multiple constructors within the same class
 
-*All the constructors in the same class will have the same name, but different number of parameters
+* All the constructors in the same class will have the same name, but different number of parameters
 
-*Which constructor is called, depends on how many arguments it is given when calling the constructor
+* Which constructor is called, depends on how many arguments it is given when calling the constructor
 
 *Method Overloading (metodin kuormitus) is a feature that allows a class to have more than one method with the same name, if their parameters are different. Method overloading can be used  with constructors but also with "normal" methods.
 
@@ -126,9 +126,9 @@ Accessors - Getter and Setter methods
 
 Usually all the attributes should be private, and with accessors we can read and assing the desired values.
 
-*Getter - Reads the values of the private attributes using a getter method
+* Getter - Reads the values of the private attributes using a getter method
 
-*Setter - Assings the values of the private attributes using a setter method
+* Setter - Assings the values of the private attributes using a setter method
 
 Get and set methods are basically quite normal methods.
 
