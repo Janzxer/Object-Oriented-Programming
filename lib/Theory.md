@@ -42,6 +42,7 @@ Every object has a role:
 * Object 3 prints
 
 ![Roles](<Images/Flow of roles.png>)
+Copyright Hämeen ammattikorkeakoulu
 
 ************
 *   Class  
@@ -54,10 +55,12 @@ Class itself is nothing, class is a blueprint more of a blueprint for creating o
 Class defines common attributes and methods of an object.
 
 ![Class example](<Images/Class example.png>)
+Copyright Hämeen ammattikorkeakoulu
 
 From class objects can be created.
 
 ![Object example](<Images/Object example.png>)
+Copyright Hämeen ammattikorkeakoulu
 
 ********************
 *   Class diagram  
@@ -74,6 +77,7 @@ The attributes of the class goes in the second box and start with a lowercase le
 The methods go in the third box and in Java methods also start with lowercase letter, but for example in C# the methods start with uppercase letter.
 
 ![Class diagram](<Images/Class diagram.png>)
+Copyright Hämeen ammattikorkeakoulu
 
 
 ********************
@@ -103,7 +107,7 @@ There can be multiple constructors within the same class
 
 * Which constructor is called, depends on how many arguments it is given when calling the constructor
 
-*Method Overloading (metodin kuormitus) is a feature that allows a class to have more than one method with the same name, if their parameters are different. Method overloading can be used  with constructors but also with "normal" methods.
+* Method Overloading (metodin kuormitus) is a feature that allows a class to have more than one method with the same name, if their parameters are different. Method overloading can be used  with constructors but also with "normal" methods.
 
 ********************
 *   Encapsulation  
@@ -112,6 +116,7 @@ There can be multiple constructors within the same class
 Usually all the attributes are made private thus can only be accessed within the class. Constructor needs to be public since that will be called outside of the class.
 
 ![Example of encapsulation](<Images/Visual for encapsulation.png>)
+Copyright Hämeen ammattikorkeakoulu
 
 The default is that we hide every attribute and method, and after that we need to think which attributes and methods are required to be public for other classes and objects.
 
@@ -120,6 +125,7 @@ The idea is that the person who uses the encapsulated class doesn't need to know
 The benefits of encapsulation is that it simplifies the maintenance of the application by allowing us to modify the methods and classes safely. This also increases reusability, by allowing us to more easily use the classes in other applications.
 
 ![Encapsulation in practice](<Images/Encapsulation in practice.png>)
+Copyright Hämeen ammattikorkeakoulu
 
 
 Accessors - Getter and Setter methods
@@ -133,6 +139,7 @@ Usually all the attributes should be private, and with accessors we can read and
 Get and set methods are basically quite normal methods.
 
 ![Example of setter and getter](<Images/Getter and Setter example.png>)
+Copyright Hämeen ammattikorkeakoulu
 
 
 Access Modifiers
