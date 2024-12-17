@@ -533,76 +533,155 @@ import java.util.Scanner;
 //     }
 // }
 
-public class PacManApp
+// public class PacManApp
+// {
+
+// 	public static void main(String[] args)
+//     {
+//         Pacman pacman = new Pacman();
+//         Fruit fruit1 = new Fruit();
+//         Fruit fruit2 = new Fruit();
+//         Fruit fruit3 = new Fruit();
+
+//         pacman.eat(fruit1);
+
+//         System.out.println(fruit1.isVisible);
+//         System.out.println(fruit2.isVisible);
+//         System.out.println(fruit3.isVisible);
+// 	}
+
+// }
+
+// class Pacman
+// {
+//     public int points;
+//     public int lives;
+
+//     public Pacman()
+//     {
+//     	points = 0;
+//         lives = 4;
+//     }
+
+//     public void printData()
+//     {
+//         System.out.println(points);
+//         System.out.println(lives);
+//     }
+
+//     public void eat(Fruit eatenFruit)
+//     {
+//     	System.out.println("Pac-Man ate fruit");
+//         eatenFruit.disappear();
+//     }
+
+//     public void vahennaElama()
+//     {
+//         System.out.println("Pacman syöty");
+//         lives--;
+//     }
+// }
+
+
+// class Fruit
+// {
+//     public boolean isVisible;
+
+//     public Fruit()
+//     {
+//     	isVisible = true;
+//     }
+
+//     public void disappear()
+//     {
+//     	isVisible = false;
+//         System.out.println("Fruit is hidden");
+//     }
+// }
+
+// class Ghost
+// {
+//     public void syoPacman(Pacman pacmanKilled)
+//     {
+//         pacmanKilled.vahennaElama();       
+//     }
+// }
+
+// public class AbstractExample
+// {
+//     public static void main(String[] args)
+//     {
+//         Square square1 = new Square(12);
+//         square1.calcArea();
+//         square1.printArea();
+//     }
+// }
+
+// abstract class Shape
+// {
+//     public double area;
+
+//     abstract public double calcArea();
+
+//     public void printArea()
+//     {
+//         System.out.println(area);
+//     }
+
+// }
+
+// class Square extends Shape
+// {
+//     private double side;
+
+//     public Square (double side)
+//     {
+//         this.side = side;
+//     }
+
+//     @Override
+//     public double calcArea()
+//     {
+//         area = side * side;
+//         return area;
+//     }
+// }
+
+public class InterfaceExample
 {
-
-	public static void main(String[] args)
+    public static void main (String[] args) throws Exception
     {
-        Pacman pacman = new Pacman();
-        Fruit fruit1 = new Fruit();
-        Fruit fruit2 = new Fruit();
-        Fruit fruit3 = new Fruit();
+        Square square1 = new Square(12);
+        square1.calcArea();
+        square1.printArea();
 
-        pacman.eat(fruit1);
-
-        System.out.println(fruit1.isVisible);
-        System.out.println(fruit2.isVisible);
-        System.out.println(fruit3.isVisible);
-	}
-
+    }
 }
 
-class Pacman
+interface Shape
 {
-    public int points;
-    public int lives;
-
-    public Pacman()
-    {
-    	points = 0;
-        lives = 4;
-    }
-
-    public void printData()
-    {
-        System.out.println(points);
-        System.out.println(lives);
-    }
-
-    public void eat(Fruit eatenFruit)
-    {
-    	System.out.println("Pac-Man ate fruit");
-        eatenFruit.disappear();
-    }
-
-    public void vahennaElama()
-    {
-        System.out.println("Pacman syöty");
-        lives--;
-    }
+    public double calcArea();
+    public void printArea();
 }
 
-
-class Fruit
+class Square implements Shape
 {
-    public boolean isVisible;
+    private double side;
 
-    public Fruit()
+    public Square (int side)
     {
-    	isVisible = true;
+        this.side = side;
+    }
+    
+    @Override
+    public double calcArea()
+    {
+        return side * side;
     }
 
-    public void disappear()
+    @Override
+    public void printArea()
     {
-    	isVisible = false;
-        System.out.println("Fruit is hidden");
-    }
-}
-
-class Ghost
-{
-    public void syoPacman(Pacman pacmanKilled)
-    {
-        pacmanKilled.vahennaElama();       
+        System.out.println(side*side);
     }
 }

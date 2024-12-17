@@ -176,3 +176,46 @@ With the eatenFruit we can call the method "dissapear"
 
 eatenFruit.disappear();
 
+******************
+*   Abstract class
+******************
+
+Abstract class can be used when creating a class that has no reason to make objects out of. For example abstract class could be "Furniture" or "Shape", we could make subclasses for those like "Chair, Table, Shelf, or Square, Rectangle, Circle".
+
+The abstract class could have very generic attributes and methods, for example an attribute could be price, size, colour, material etc. which can be inherited to the subclasses.
+
+When to use abstract class?
+
+When we know that we need a specific method, but don't know how to implement it in practice.
+
+Or we know that the method functions differently in all the subclasses.
+
+For example, with method calculateArea, it is very different for "Circle" and "Rectangle"
+
+Abstract method just declares that the method should be in the subclass but does not give any content for it. Subclass needs to daclare methods functionality.
+
+    If even one method in the class is abstract, the class must be abstract.
+
+    Abstract method does not have a body (There isn't an actual funtionality/code) it is just a declaration of to be method
+
+    A constructor cannot be abstract
+
+    All the abstract methods must be coded and overridden in the subclass
+
+    There can be also normal methods in abstract class and constructors
+
+
+
+******************
+*   Interface
+******************
+
+You always need to inherit class from the interface to create object from it.
+
+Interface is like an abstract class taken further, all methods in interface are abstract.
+
+Class can inherit several interfaces. For example, class inherits three interfaces, and all the methods of the different interfaces are coded in the class.
+
+Interface can have methods (also getters and setter), but no attributes.
+
+In code, all the methods are abstract, even if you don't mark them abstract. There can't be any normal methods or attributes, and with interface when inheriting the keyword used is "implements" instead of "extends". The implementing class must declare the methods functionalities.
