@@ -18,7 +18,9 @@ numberOfDoors = 4
 Objects can do something, for example change the values of its attributes. These procedures/actions/behaviors are called methods.
 
 Fiat object methods:
+
 Accelerate
+
 Start
 
 **************************
