@@ -647,41 +647,338 @@ import java.util.Scanner;
 //     }
 // }
 
-public class InterfaceExample
+// public class InterfaceExample
+// {
+//     public static void main (String[] args) throws Exception
+//     {
+//         Square square1 = new Square(12);
+//         square1.calcArea();
+//         square1.printArea();
+
+//     }
+// }
+
+// interface Shape
+// {
+//     public double calcArea();
+//     public void printArea();
+// }
+
+// class Square implements Shape
+// {
+//     private double side;
+
+//     public Square (int side)
+//     {
+//         this.side = side;
+//     }
+
+//     @Override
+//     public double calcArea()
+//     {
+//         return side * side;
+//     }
+
+//     @Override
+//     public void printArea()
+//     {
+//         System.out.println(side*side);
+//     }
+// }
+
+// public class Main
+// {
+//     public static void main (String[] args) throws Exception
+//     {
+//         Scanner in = new Scanner(System.in); 
+//         Car car = new Car("Toyota", "RAV4",40);
+
+//         String input;
+
+//         while(true)
+//         {
+//         System.out.println("a=accelerate b=break x=exit");
+//         input = in.nextLine();
+
+//         if(input.equals("a"))
+//             {
+//                 car.accelerate();
+//             }
+//         else if(input.equals("b"))
+//             {
+//                 car.brake();
+//             }
+//         else if(input.equals("x"))
+//             {
+//                 break;
+//             }
+//         }
+//     }
+// }
+
+// class Car
+// {
+//     private String brand = "";
+//     private String model = "";
+//     private int amountOfFuel =0;
+
+//     public Car()
+//     {
+//         brand = "";
+//         model = "";
+//         amountOfFuel = 0;
+//         printData();
+//     }
+
+//     public Car(String brand, String model, int amountOfFuel)
+//     {
+//         this.brand = brand;
+//         this.model = model;
+//         this.amountOfFuel = amountOfFuel;
+//         printData();
+//     }
+
+//     public void setModel(String model)
+//     {
+//         this.model = model;
+//     }
+
+//     public String getModel()                    // Getter doesn't use parameters.
+//     {
+//         return model;
+//     }
+
+// public void refuel(int amount)
+// {
+//     System.out.println("Fuel in the tank: " + amountOfFuel);
+//     System.out.println("Refuel: " + amount);
+//     amountOfFuel += amount;                                                     // The += needs to be in that order for it to add fuel instead of replacing it.
+//     System.out.println("Fuel in the tank after the refuel: " + amountOfFuel);
+// }
+
+// public void brake()
+//     {
+//         System.out.println("Car is breaking");
+//     }
+
+// public void accelerate()
+//     {
+//         if(amountOfFuel > 0)
+//         {
+//             amountOfFuel --;
+//             System.out.println("Car is accelerating");
+//         }  
+//     }
+// private void printData()
+//     {
+//         System.out.println("Brand: " + brand);
+//         System.out.println("Model: " + model);
+//         System.out.println("Fuel: " + amountOfFuel);
+//     }
+// }
+
+// public class Main
+// {
+//     public static void main (String[] args) throws Exception
+//     {
+ 
+//     }
+// }
+
+// class LightSwitch
+// {
+//     public boolean lightsOn;
+
+//     public void printInfo()
+//     {
+//         if(lightsOn)
+//         {
+//             System.out.println("Lights are on");
+//         }
+//         else
+//         {
+//             System.out.println("Lights are off");
+//         }
+//     }
+// }
+
+// class Dimmer extends LightSwitch
+// {
+//     public int brightness;
+
+//     public void setBrightness(int brightness)
+//     {
+//         this.brightness = brightness;
+
+//         if(brightness > 0)
+//         {
+//             lightsOn = true;
+//         }
+//         else
+//         {
+//             lightsOn = false;
+//         }
+//     }
+    
+//     @Override
+//     public void printInfo()
+//     {
+//         if(brightness == 0)
+//         {
+//         System.out.println("Lights are off.");
+//         }
+//         else
+//         {
+//             System.out.println("Brightness is " + brightness + ".");
+//         }
+//     }
+    
+// }
+
+// public class Main
+// {
+//     public static void main (String[] args) throws Exception
+//     {
+//         Scanner in = new Scanner(System.in);
+//         int w = 0;
+//         int l = 0;
+//         System.out.println("Width?");
+//         w = Integer.parseInt(in.nextLine());
+//         System.out.println("Length?");
+//         l = Integer.parseInt(in.nextLine());
+
+//         int area = Utils.areaCalc(w, l);
+//         System.out.println("Area is " + area);
+        
+//     }
+// }
+// class Utils
+// {
+//     public static void printTitle()
+//     {
+//         System.out.println("*******");
+//         System.out.println("* OOP *");
+//         System.out.println("*******");
+//     }
+
+//     public static int areaCalc(int width, int length)
+//     {
+//         int area = width * length;
+//         return area;
+//     }
+// }
+
+// public class Main
+// {
+//     public static void main (String[] args) throws Exception
+//     {
+ 
+//     }
+// }
+
+// abstract class Interactable
+// {
+//     abstract void interact();
+//     public boolean isOn;
+// }
+
+// class Door extends Interactable
+// {
+//     @Override
+//     public void interact()
+//     {
+//         if(isOn)
+//         {
+//             System.out.println("Door closed");
+//             isOn = false; 
+//         }
+//         else
+//         {
+//             System.out.println("Door opened");
+//             isOn = true;
+//         }
+//     }
+// }
+
+// class LightSwitch extends Interactable
+// {
+//     @Override
+//     public void interact()
+//     {
+//         if(isOn)
+//         {
+//             System.out.println("Lights turned off");
+//             isOn = false; 
+//         }
+//         else
+//         {
+//             System.out.println("Lights turned on");
+//             isOn = true;
+//         } 
+//     }
+// }
+
+public class Main
 {
     public static void main (String[] args) throws Exception
     {
-        Square square1 = new Square(12);
-        square1.calcArea();
-        square1.printArea();
-
+        Dishwasher dishwasher = new Dishwasher(3, true);
+        dishwasher.setProgramme(3);
+        dishwasher.turnOnOff();
+        System.out.println(dishwasher.getIsOn());
     }
 }
 
-interface Shape
+class Dishwasher
 {
-    public double calcArea();
-    public void printArea();
+    private int programme;
+    private boolean isOn;
+
+public Dishwasher()
+{
+    programme = 1;
+    isOn = false;
+    printData();
 }
 
-class Square implements Shape
+public Dishwasher(int programme, boolean isOn)
 {
-    private double side;
+    this.programme = programme;
+    this.isOn = isOn;
+    printData();
+}
 
-    public Square (int side)
+public void turnOnOff()
     {
-        this.side = side;
-    }
-    
-    @Override
-    public double calcArea()
-    {
-        return side * side;
+        isOn = !isOn;
     }
 
-    @Override
-    public void printArea()
+public void setProgramme(int programme)
+{
+    this.programme = programme;
+    if(programme == 1)
+        {
+            System.out.println("normal");
+        }
+    else if (programme == 2)
+        {
+            System.out.println("auto");
+        }
+    else if (programme == 3)
+        {
+            System.out.println("Intensive");
+        }
+}
+
+private void printData()
+{
+    System.out.println("Is the dishwasher on: " + isOn);
+    System.out.println("Programme: " + programme);
+}
+
+public boolean getIsOn()
     {
-        System.out.println(side*side);
+        return isOn;
     }
+
 }
